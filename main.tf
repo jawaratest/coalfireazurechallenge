@@ -60,10 +60,6 @@ resource "azurerm_availability_set" "availabilityset" {
         name                = "coalfire-aset"
         location            = azurerm_resource_group.rg.location
         resource_group_name = azurerm_resource_group.rg.name
-
-  tags = {
-    environment = "coalfire-test"
-  }
 }
 
 resource "azurerm_linux_virtual_machine" "vm" {
